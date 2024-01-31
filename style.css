@@ -345,17 +345,17 @@
   background-color: var(--color-navi);
   color: var(--color-white);
   text-decoration: none;
-  padding: 10px 10px; 
+  padding: 10px 20px; 
   border-radius: 3px;
   border-bottom: 2px solid var(--color-gray);
   transition: opacity 0.2s;
-  margin: 5px;
+  margin: 8px 6px;
   width: 150px;
 }
 
 .work-button:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 
@@ -380,27 +380,9 @@
     transform: none; /* Remove the rotation effect */
 }
 
-.buttons-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
 
-.work-button {
-  font-family: inherit;
-  background-color: var(--color-navi);
-  color: var(--color-white);
-  text-decoration: none;
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 3px;
-  border-bottom: 2px solid var(--color-gray);
-  transition: opacity 0.2s;
-}
 
-.work-button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
+
 
 .work-details {
   position: absolute;
@@ -455,9 +437,10 @@
   color: var(--color-navi);
   text-decoration: underline;
   padding: 0;
-  margin: 10px 8px; /* Adjust margin as needed */
+  margin: 10px 0; /* Adjust margin as needed */
   border: none;
   cursor: pointer;
+  text-align: left;
 }
 
 .work-details-button:hover {
