@@ -503,7 +503,7 @@ section {
 
   /* Adjust spacing and font size for better readability on smaller screens */
   section {
-      padding: 10px;
+      padding: 6px;
   }
 
   /* Center-align the "Download my CV" button */
@@ -539,5 +539,18 @@ section {
     padding: 0px 0px 0px 0px;
 }
 
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center items vertically */
+  text-align: center;
+}
+
+#home img.profile__portrait {
+  display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 10px;
+}
 
 }
