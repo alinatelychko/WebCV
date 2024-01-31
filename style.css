@@ -26,6 +26,7 @@
     max-width: 20000px; /* Set a maximum width for the body */
     margin: 0 auto; /* Center the body horizontally */
     
+    
   }
 
 
@@ -274,6 +275,7 @@
     padding: 5px 20px 5px 20px; /* Padding for each item */
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    text-align: center;
 }
 
 .education-item h2 {
@@ -282,6 +284,7 @@
 
 .education-item p {
     margin: 10px 0; /* Adjust margin for paragraphs */
+  
 }
 
 .key-skills {
@@ -359,6 +362,22 @@
 .work-item {
   position: relative;
   /* Existing styles for work item */
+}
+
+.work-item h2,
+.work-item p {
+    text-align: center;
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.work-item:hover {
+    transform: none; /* Remove the rotation effect */
 }
 
 .buttons-row {
@@ -448,3 +467,51 @@
 .details-description  h1, h2, p, ul {
   text-align: left;
 }
+
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of elements */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+.content-container img {
+  /* padding: 20px; */
+  max-width:400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+  border-radius: 8px; /* Add border-radius for a rounded appearance */
+}
+
+.content-container div {
+  max-width: calc(100% - 400px); /* Adjust the max-width of the text */
+  margin-right: 20px; /* Adjust margin between image and text */
+}
+
+.content-container p {
+  margin-bottom: 15px; /* Add margin between paragraphs */
+  padding: 0px 60px 0px 60px;
+  line-height: 1.8;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media {
+  margin-top: 5px;
+}
+
+.social-media img {
+  margin: 0 5px; 
+}
+
