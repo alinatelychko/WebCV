@@ -503,11 +503,8 @@ section {
 
   /* Adjust spacing and font size for better readability on smaller screens */
   section {
-      padding: 20px;
+      padding: 10px;
   }
-
-
-  
 
   /* Center-align the "Download my CV" button */
   .button {
@@ -541,8 +538,6 @@ section {
     margin-bottom: 15px;
     padding: 0px 0px 0px 0px;
 }
-
-
 
 
 }
