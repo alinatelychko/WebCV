@@ -1,0 +1,450 @@
+:root {
+    --color_dark-navi: #494999;
+    --color_light-navi: #b5b5e4;
+    --color-navi: #7676bd;
+    --color-blue: #2c2c7b;
+    --color_dark-blue: #0f0f4e;
+    --color-navi-sky: #6680f4;
+    --background-color-milky: rgb(239, 239, 252);
+    --color-gray: rgba(0, 0, 0, 0.3);
+    --color-white: white;
+    --color-orange: #edc655;
+    --color-yellow: #fcffad;
+    --color-red: #f76414;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color-blue);
+    max-width: 20000px; /* Set a maximum width for the body */
+    margin: 0 auto; /* Center the body horizontally */
+    
+  }
+
+
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--color_light-navi);
+  }
+
+  a {
+    color: var(--color_light-navi);
+  }
+
+  a:visited {
+    color: var(--color_light-navi);
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
+  a:active {
+    color: var(--color-navi-sky);
+  }
+
+  form {
+    color: var(--color-navi);
+  }
+
+  #submit {
+    background-color: var(--color-navi);
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .profile__portrait {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+
+  .page-footer {
+    clear: both;
+  }
+
+.profile {
+    width: 90%; /* Set the width to 100% to make it full-screen width */
+    margin: 5%; /* Remove margin to prevent centering */
+}
+
+  .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .page-header__item {
+    flex: 0 1 200px;
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .navigation-list {
+    list-style-type: none;
+  }
+
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  section {
+    margin: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .grid__item {
+    background-color: var(--background-color-milky);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .grid__item:first-child {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+  }
+
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+
+    .grid__item:first-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  .button, button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: var(--color-navi);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 3px;
+    border-bottom: 2px solid var(--color-gray);
+    transition: opacity 0.2s;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  button:hover, button:focus, .button:hover, .button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  #about_main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  table {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about_list li {
+    list-style-type: none;
+  }
+
+  @keyframes color-change {
+    0% {
+      fill: var(--color-orange);
+    }
+
+    50% {
+      fill: var(--color-yellow);
+    }
+
+    100% {
+      fill: var(--color-red);
+    }
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation: 15s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
+
+  .contact_page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  .animated-section {
+    opacity: 0;
+    transform: translateY(50px); /* Adjust the initial position based on your preference */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.animated-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Adjust the gap between items */
+    margin-top: 40px; /* Add some top margin for spacing */
+}
+
+.education-item {
+    background-color: #f5f5f5; /* Background color for each item */
+    padding: 5px 20px 5px 20px; /* Padding for each item */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.education-item h2 {
+    color: #333; /* Set text color */
+}
+
+.education-item p {
+    margin: 10px 0; /* Adjust margin for paragraphs */
+}
+
+.key-skills {
+    font-weight: bold;
+}
+
+.key-skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.key-skills-list li {
+    margin-bottom: 5px;
+}
+
+#work {
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.work-container {
+  display: inline-block; /* Keep all items in a single line */
+}
+
+.work-item {
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  display: inline-block; /* Display items in a line */
+  white-space: normal; /* Allow text to wrap within items */
+  vertical-align: top; /* Align items at the top */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.work-item:hover {
+  transform: none; /* Remove the rotation effect */
+}
+
+
+.buttons-row {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.work-button {
+  font-family: inherit;
+  background-color: var(--color-navi);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 10px 10px; 
+  border-radius: 3px;
+  border-bottom: 2px solid var(--color-gray);
+  transition: opacity 0.2s;
+  margin: 5px;
+  width: 150px;
+}
+
+.work-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+
+.work-item {
+  position: relative;
+  /* Existing styles for work item */
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.work-button {
+  font-family: inherit;
+  background-color: var(--color-navi);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 3px;
+  border-bottom: 2px solid var(--color-gray);
+  transition: opacity 0.2s;
+}
+
+.work-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.work-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.work-details p {
+  margin-bottom: 15px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+
+.work-details.active {
+  display: block;
+}
+
+#overlay.active {
+  display: block;
+}
+
+.close-cross {
+  font-size: 34px; /* Adjust the font size as needed */
+  color: #b5b5e4; /* Set the color to black or any color you prefer */
+  cursor: pointer;
+}
+
+.close-cross:hover {
+  opacity: 0.8; /* Adjust the opacity on hover if needed */
+}
+
+
+.work-details-button {
+  font-family: inherit;
+  background: none;
+  color: var(--color-navi);
+  text-decoration: underline;
+  padding: 0;
+  margin: 10px 8px; /* Adjust margin as needed */
+  border: none;
+  cursor: pointer;
+}
+
+.work-details-button:hover {
+  opacity: 0.8; /* Adjust opacity on hover if needed */
+}
+
+.details-description  h1, h2, p, ul {
+  text-align: left;
+}

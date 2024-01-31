@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alina Telychko project</title>
+    <!-- <script src="main.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/сss/style.production.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600&family=Lato:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <header class="page-header">
+        <img width="59" height="59" src="https://img.icons8.com/pulsar-line/96/additional.png" alt="additional"/>
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="#home" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="#about" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+            
+                <li role="presentation">
+                    <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+    <main class="profile">
+        <section id="home">
+            <img src="/img/Screenshot 2023-08-31 at 11.50.50.png" class="profile__portrait" alt="Alina_Telychko_pic" >
+            <h1>CV</h1>
+            <p>Hello! I'm Alina Telychko, a passionate web developer based in Berlin, Germany. 
+                <br>
+                With a background as a Math Teacher, I transitioned into the dynamic world of web development and am excited to share my skills and journey with you.</p>
+            <a href="#work">Check out some of my code</a>
+        </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <section id="about" class="animated-section">
+            <h1>About </h1>
+            <div>I am a dedicated web developer with a focus on both front-end and back-end technologies. Originally from Ukraine, I now call Berlin home. My journey in programming is just beginning, and I am eager to contribute my creativity and problem-solving skills to the tech industry.
+            </div>
+          
+            <br>
+            <a href="files/CV_Developer.pdf" class="button" download>Download my CV</a>
+            <br>
+        </section>
+        <br>
+        <section id="front-end-development" class="animated-section">
+            <h1>Front End Development</h1>
+            <div class="education-container">
+                <!-- Education Item 1 (Front End Development) -->
+                <div class="education-item">
+                    <h2>Languages</h2>
+                    <p>HTML, CSS, JavaScript, TypeScript</p>
+                </div>
+
+                <!-- Education Item 2 (Front End Development) -->
+                <div class="education-item">
+                    <h2>Libraries / Frameworks</h2>
+                    <p>React, Redux, Angular, Material, Bootstrap, SASS/SCSS, jQuery</p>
+                </div>
+
+                <!-- Education Item 3 (Front End Development) -->
+                <div class="education-item">
+                    <h2>Responsive Design</h2>
+                    <p>Developed skills in creating visually appealing and user-friendly interfaces across devices</p>
+                </div>
+
+                <div class="education-item">
+                    <h2>AJAX,JSON</h2>
+                    <p>Mastered fetching and manipulating data asynchronously for dynamic web applicationsMastered fetching and manipulating data asynchronously for dynamic web applications</p>
+                </div>
+
+                <div class="education-item">
+                    <h2>Test-Driven Development (TDD)</h2>
+                    <p>Executed Unit Testing
+                        Conducted Integration Testing
+                        Applied Acceptance Testing
+                        Performed End-to-End Testing</p>
+                </div>
+
+                <div class="education-item">
+                    <h2>Mobile Development</h2>
+                    <p>Acquired skills in React Native, Expo, and Progressive Web Apps (PWA)</p>
+                </div>
+
+            </div>
+        </section>
+<br>
+        <section id="back-end-development" class="animated-section">
+            <h1>Back End Development</h1>
+            <div class="education-container">
+                <!-- Education Item 1 (Back End Development) -->
+                <div class="education-item">
+                    <h2>NodeJS, Express</h2>
+                    <p>Developed the ability to build scalable and robust server-side applications</p>
+                </div>
+
+                <!-- Education Item 2 (Back End Development) -->
+                <div class="education-item">
+                    <h2>APIs</h2>
+                    <p>Designed and implemented JSON, RESTful APIs, and utilized Postman for testing</p>
+                </div>
+
+                <!-- Education Item 3 (Back End Development) -->
+                <div class="education-item">
+                    <h2>Hosting, Web Services</h2>
+                    <p>Acquired experience with AWS, Google Firestore, Heroku, and Netlify</p>
+                </div>
+
+                <div class="education-item">
+                    <h2>Databases</h2>
+                    <p>Proficiency in Relational Databases, specifically PostgreSQL
+                        Familiarity with Non-Relational Databases, particularly MongoDB</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section >
+            <h1>Work</h1>
+          <div id="work" class="animated-section">
+            <div class="work-container" id="work" onmousedown="handleMouseDown(event)" onmousemove="handleMouseMove(event)" onmouseup="handleMouseUp()">
+                <div class="work-item" onclick="moveWorkItem(this)">
+                    <img src="img/angular.png" alt="Work Item 1">
+                    <h2>Angular client - myFlix </h2>
+                    <p>This Angular-based web movie app enables users to browse, view details, and manage their favorite movies.</p>
+                    <div class="buttons-row">
+                        <a href="your_page_url" class="work-button" target="_blank">View page</a>
+                        <a href="https://github.com/alinatelychko/myFlix-Angular.git" class="work-button" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="work-details-button" onclick="toggleDetails('details1')">Details</button>
+                    </div>
+                    <div id="details1" class="work-details">
+                       
+                        <div class="details-description">
+                            <p>This is the Angular client - A single-page, responsive web application (SPA), using Material design.</p>
+
+                            <h3>Features:</h3>
+                            <ul>
+                              <li>View a list of all movies</li>
+                              <li>See details for each movie, style, or source</li>
+                              <li>User registration and login</li>
+                              <li>Update profile (username, password, email, birthday)</li>
+                              <li>Users can add or remove a movie to/from their list of favorites</li>
+                              <li>Users can delete their account</li>
+                            </ul>
+                          
+                            <h3>Technologies:</h3>
+                            <ul>
+                              <li>TypeScript</li>
+                              <li>Angular</li>
+                              <li>Angular-Material</li>
+                              <li>CSS</li>
+                              <li>TypeDoc for documentation</li>
+                              <li>GitHub-pages hosting</li>
+                            </ul>
+                        </div>
+                        <span class="close-cross" onclick="toggleDetails('details1')">&times;</span>
+                    </div>
+                </div>
+
+                <div class="work-item" onclick="moveWorkItem(this)">
+                    <img src="img/flix.png" alt="Work Item 2">
+                    <h2>React client - myFlix</h2>
+                    <p>Web application that allows users to explore a collection of movies, manage their favorite movies, and update their user profile.</p>
+                    <div class="buttons-row">
+                        <a href="your_page_url" class="work-button" target="_blank">View page</a>
+                        <a href="https://github.com/alinatelychko/myFlix-client.git" class="work-button" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="work-details-button" onclick="toggleDetails('details2')">Details</button>
+                    </div>
+                    <div id="details2" class="work-details">
+                       
+                        <div>
+                            <p>This is the React-based frontend - A single-page, responsive web application (SPA).</p>
+
+                            <h3>Features:</h3>
+                            <ul>
+                              <li>View a list of all movies</li>
+                              <li>See details for each movie, style, or source</li>
+                              <li>Search movies by name</li>
+                              <li>User registration and login</li>
+                              <li>Update profile (username, password, email, birthday)</li>
+                              <li>Users can add or remove a movie to/from their list of favorites</li>
+                              <li>Users can delete their account</li>
+                            
+                            </ul>
+                          
+                            <h3>Technologies:</h3>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li>React</li>
+                              <li>React-Bootstrap</li>
+                              <li>React-Redux</li>
+                              <li>Axios</li>
+                              <li>Parcel</li>
+                              <li>PropTypes</li>
+                              <li>Netlify hosting</li>
+                            </ul>
+                        </div>
+                        <span class="close-cross" onclick="toggleDetails('details2')">&times;</span>
+                    </div>
+                </div>
+
+                <div class="work-item" onclick="moveWorkItem(this)">
+                    <img src="img/chat.png" alt="Work Item 2">
+                    <h2>CHAT mobile app</h2>
+                    <p>Chat application that leverages Firebase for real-time messaging. Users can send text messages, images, and share their location. </p>
+                    <div class="buttons-row">
+                        <a href="your_page_url" class="work-button" target="_blank">View page</a>
+                        <a href="https://github.com/alinatelychko/chat-app.git" class="work-button" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="work-details-button" onclick="toggleDetails('details3')">Details</button>
+                    </div>
+                    <div id="details3" class="work-details">
+                       
+                        <div>
+                            <p>A chat app for mobile devices (Android and iOS) created with React Native.</p>
+  <p>A Google Firestore database was used to store and sync the messages between devices.</p>
+
+  <h3>Features:</h3>
+  <ul>
+    <li>Enter username</li>
+    <li>Choose background color</li>
+    <li>Send and receive messages</li>
+    <li>Share pictures from the device's gallery</li>
+    <li>Take and share photos</li>
+    <li>Share location</li>
+    <li>See past messages even while offline</li>
+  </ul>
+
+  <h3>Technologies:</h3>
+  <ul>
+    <li>JavaScript</li>
+    <li>React Native</li>
+    <li>Android Studio</li>
+    <li>Expo</li>
+    <li>Google Firebase</li>
+  </ul>
+                        </div>
+                        <span class="close-cross" onclick="toggleDetails('details3')">&times;</span>
+                    </div>
+                </div>
+
+                <div class="work-item" onclick="moveWorkItem(this)">
+                    <img src="img/meet.png" alt="Work Item 2">
+                    <h2>Meet app</h2>
+                    <p>App allows users to explore events from cities. Users can filter events based on city, specify the number of events, and view event details.</p>
+                    <div class="buttons-row">
+                        <a href="your_page_url" class="work-button" target="_blank">View page</a>
+                        <a href="https://github.com/alinatelychko/meet.git" class="work-button" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="work-details-button" onclick="toggleDetails('details4')">Details</button>
+                    </div>
+                    <div id="details4" class="work-details">
+                       
+                        <div>
+                            
+  <p>This app displays events in different cities fetched from mock-data Google Calendar.</p>
+
+  <p>PWA (progressive web application) means it is responsive, available offline, cross-platform, and can be added to the home screen.</p>
+
+  <h3>Features:</h3>
+  <ul>
+    <li>Show a list of events</li>
+    <li>Show/hide event details</li>
+    <li>Filter by city name</li>
+    <li>Choose the number of events to display</li>
+    <li>Chart 1: Number of upcoming events per city</li>
+    <li>Chart 2: Popularity of topics</li>
+  </ul>
+
+  <h3>Technologies:</h3>
+  <ul>
+    <li>React, CRA (CreateReactApp)</li>
+    <li>Serverless,AWS Lambda</li>
+    <li>OAuth (Google Cloud Console)</li>
+    <li>Axios, Recharts, Atatus</li>
+    <li>Jest (Enzyme, Cucumber, Puppeteer)</li>
+   
+  </ul>
+                        </div>
+                        <span class="close-cross" onclick="toggleDetails('details4')">&times;</span>
+                    </div>
+                </div>
+
+                <div class="work-item" onclick="moveWorkItem(this)">
+                    <img src="img/back.png" alt="Work Item 2">
+                    <h2>Backend (API)</h2>
+                    <p> This API provides information about movies, directors, and genres. Users can register, log in, and manage their favorite movies.</p>
+                    <div class="buttons-row">
+                        <a href="your_page_url" class="work-button" target="_blank">View page</a>
+                        <a href="https://github.com/alinatelychko/Achivement-2.-Node.js.git" class="work-button" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="work-details-button" onclick="toggleDetails('details5')">Details</button>
+                    </div>
+                    <div id="details5" class="work-details">
+                       
+                        <div>
+                            <p>MoveX is a library of movements from various styles and traditions, with descriptions/cues and video sources.</p>
+
+  <p>For the MoveX study project, I created an API, including a non-relational database, as well as two different frontend clients (Angular and React).</p>
+
+  <p>This is the REST API and a non-relational database.</p>
+
+  <p>The study goals here were to learn about NodeJS, databases (SQL and NoSQL), and APIs in general.</p>
+
+  <h3>Technologies:</h3>
+  <ul>
+    <li>JavaScript</li>
+    <li>Node.js (Express, Morgan, bodyParser, mongoose, CORS, Passport, bcrypt)</li>
+    <li>Non-relational DB on MongoDB Atlas</li>
+    <li>Postman (API endpoint testing)</li>
+    <li>JSDoc for documentation</li>
+    <li>App hosted on Heroku</li>
+  </ul>
+                        </div>
+                        <span class="close-cross" onclick="toggleDetails('details5')">&times;</span>
+                    </div>
+                </div>
+              
+                <div class="work-item" onclick="moveWorkItem(this)">
+                    <img src="img/pokedex.png" alt="Work Item 2">
+                    <h2>Pokedex</h2>
+                    <p>This simple web application allows users to explore a list of Pokemon, view their basic information, and search for specific Pokemon.</p>
+                    <div class="buttons-row">
+                        <a href="your_page_url" class="work-button" target="_blank">View page</a>
+                        <a href="https://github.com/alinatelychko/pokedex.git" class="work-button" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="work-details-button" onclick="toggleDetails('details6')">Details</button>
+                    </div>
+                    <div id="details6" class="work-details">
+                       
+                        <div>
+<p>The app uses the PokéAPI to fetch a list of Pokemon and their details. Pokemon data is structured with name, details URL, image URL, height, and types. Acknowledgments Pokemon data sourced from PokéAPI. Bootstrap for styling. jQuery for DOM manipulation.</p>
+                            <h3>Features:</h3>
+  <ul>
+    <li>Search: Easily search for Pokemon by name using the search bar.</li>
+    <li>List: View a list of Pokemon with basic information.</li>
+    <li>Details: Click on a Pokemon to see more details, including its height and an image.</li>
+  </ul>
+
+  <h3>Technologies Used:</h3>
+  <p>Frontend: HTML, CSS, JavaScript, Bootstrap</p>
+  <p>API: PokéAPI</p>
+  <p>Libraries: Bootstrap, jQuery</p>
+                        </div>
+                        <span class="close-cross" onclick="toggleDetails('details6')">&times;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        </section>
+
+        <section id="contact" class="animated-section">
+            <div class="contact_page">
+                <h1>Contact</h1>
+                <div>
+                    <h2>Alina Telychko</h2>
+                    <p>Brachestr 29</p>
+                    <p>12000 Berlin</p>
+                    <p>Deutschland</p>
+                    <br>
+                    <a href="tel:+49 99 9999 9999">Tel: +49 99 9999 9999</a>
+                    <br>
+                    <a href="mailto:adelin9999@gmail.com">Email: adelin9999@gmail.com</a>
+                </div>
+                <br>
+                <h3>To contact me:</h3>
+                <form action="" method="post" id="contact-form">
+                    <!-- ... your contact form content ... -->
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <img src="img/github.svg" alt="Github">
+            <img src="img/twitter.svg" alt="Twitter">
+            <img src="img/linkedin.svg" alt="LinkedIn">
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
